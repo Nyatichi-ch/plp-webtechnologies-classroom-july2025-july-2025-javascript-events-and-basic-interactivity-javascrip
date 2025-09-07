@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events and Basic Interactivity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <h2>JavaScript Events and Basic Interactivity</h2>
+        <button id="theme-toggle">Toggle theme</button>
+        <p>type a message</p>
+        
+    <div class="container">
+       <h2> Counter</h2> 
+         <div id="counterValue">0</div>
+         <div class="buttons">
+            <button id="incrementBtn">Increment</button>
+            <button id="decrementBtn">Decrement</button>
+            <button id="resetBtn">Reset</button>
+        </div>        
+    </div>
+    <br>
+    <h2>FAQ Section</h2>
+    <div class="faq-container">
+    <div class="faq item">
+        <button class="faq-question">What is JavaScript?</button>
+        <div class="faq-answer">
+        <p class="faq-answer">JavaScript is a programming language used to create interactive effects.</p>
+    </div>
+    </div>
+     
+    <div class="faq item">
+        <button class="faq-question"> How does it work?</button>
+        <div class="faq-answer">
+        <p class="faq-answer">It uses eventListener, which then uses CSS to control its visibility and height, creating a smooth expand/collapse effect.</p>
+    </div>
+    </div>
+    </div>                         
+    
+   <h2>Dropdown menu</h2>
+    <div class="dropdown">
+        <button class="dropbtn">Select a fruit</button>
+        <div class="dropdown-content">
+            <a href="#">Apple</a>
+            <a href="#">Banana</a>
+            <a href="#">Cherry</a>
+            <a href="#">Grape</a>
+    </div>
+    </div>
+    <h2> A tabbed Interface</h2>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Chiwawa')">Chiwawa</button>
+        <button class="tablinks" onclick="openTab(event, 'Labrador')">Labrador</button>
+        <button class="tablinks" onclick="openTab(event, 'Poodle')">Poodle</button>
+    </div>
+    <div id="Chiwawa" class="tabcontent">
+        <h3>Chiwawa</h3>
+        <p>The Chiwawa is the smallest breed of dog. It is known for its lively and alert personality.</p>
+    </div>
+    <div id="Labrador" class="tabcontent">
+        <h3>Labrador</h3>
+        <p>The Labrador is a friendly and outgoing breed. It is often used as a service dog due to its intelligence and trainability.</p>
+    </div>
+    <div id="Poodle" class="tabcontent">
+        <h3>Poodle</h3>
+        <p>The Poodle is a highly intelligent and active breed. It comes in three sizes: standard, miniature, and toy.</p>
+    </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
